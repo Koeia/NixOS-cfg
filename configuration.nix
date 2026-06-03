@@ -26,17 +26,29 @@
         tree
         ];
     };
+	fileSystems = {
+  		"/".options = [ "compress=zstd" ];
+  		"/home".options = [ "compress=zstd" ];
+ 		"/nix".options = [ "compress=zstd" "noatime" ];
+  		"/swap".options = [ "noatime" ];
+	};
+
+	services.btrfs.autoScrub = {
+  		enable = true;
+  		interval = "monthly";
+  		fileSystems = [ "/" ];
+	};
 
    services.openssh.enable = true ; 
     programs.firefox.enable = true;
     environment.systemPackages = with pkgs; [
-	gcc
-	vim
+		gcc
+		vim
         wget
         curl
         alacritty
         waybar
-	neovim
+		neovim
     ];  
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
