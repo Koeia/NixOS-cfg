@@ -5,7 +5,7 @@
     home.homeDirectory = "/home/jctannu4";
     home.stateVersion = "26.05";
     programs.git.enable = true;
-    programs.bash = {
+    programs.zsh = {
         enable = true;
         shellAliases = {
             btw = "echo i use nixos, btw";
