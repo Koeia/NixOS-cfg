@@ -10,6 +10,7 @@
 	userEmail = "whereischason@protonmail.com";
   	extraConfig = {
     init.defaultBranch = "main";
+	core.editor = "vim";
   };
 };
 
