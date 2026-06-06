@@ -1,16 +1,13 @@
 { pkgs, inputs, ... }:
 {
   home-manager.users.jctannu4 = {
-    # import the home manager module
     imports = [
       inputs.noctalia.homeModules.default
     ];
 
-    # configure options
     programs.noctalia-shell = {
       enable = true;
       settings = {
-        # configure noctalia here
         bar = {
           density = "compact";
           position = "top";
@@ -51,8 +48,26 @@
             ];
           };
         };
-        colorSchemes.predefinedScheme = "Monochrome";
-        general = {
+        wallpaper = {
+          enabled = true;
+          directory = "~/Wallpapers";
+          monitorDirectories = [ ];
+          viewMode = "single";
+          setWallpaperOnAllMonitors = true;
+          linkLightAndDarkWallpapers = true;
+          fillMode = "crop";
+          brightness = {
+          brightnessStep = 5;
+          enforceMinimum = true;
+          enableDdcSupport = false;
+          backlightDeviceMappings = [ ];
+            };
+	};
+	colorSchemes = {
+          useWallpaperColors = true;
+          darkMode = true;
+	};
+	general = {
           avatarImage = "/home/jctannu4/.face";
           radiusRatio = 0.2;
         };
@@ -61,7 +76,6 @@
           name = "Rocky Mount, North Carolina";
         };
       };
-      # this may also be a string or a path to a JSON file.
     };
   };
 }

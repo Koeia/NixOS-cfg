@@ -48,6 +48,7 @@
 	neovim
 	quickshell
 	kdePackages.dolphin
+	brightnessctl
 	udiskie
 	usbutils	
 	yazi
