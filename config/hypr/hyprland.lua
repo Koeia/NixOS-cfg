@@ -1,4 +1,3 @@
---comment
 hl.monitor({
     output   = "",
     mode     = "preferred",
@@ -7,9 +6,10 @@ hl.monitor({
 })
 
 local terminal    = "alacritty"
-local browser     = "firefox"
+local browser     = "zen"
 local fileManager = "alacritty -e yazi"
 local menu        = "fuzzel"
+local editor      = "zeditor"
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("bash ~/nixos-dotfiles/config/hypr/startup.sh")
@@ -146,8 +146,8 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("zen"))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("zeditor"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + M",
     hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
