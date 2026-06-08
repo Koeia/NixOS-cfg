@@ -58,7 +58,10 @@
     zed-editor
     nil
     nixd
+    lua-language-server
+    nodejs
     quickshell
+    pass
     kdePackages.dolphin
     brightnessctl
     udiskie
