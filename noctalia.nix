@@ -10,6 +10,7 @@
       settings = {
         bar = {
           backgroundOpacity = 0;
+          useSeparateOpacity = true;
           density = "compact";
           position = "top";
           showCapysule = false;
@@ -35,7 +36,7 @@
             ];
             right = [
               {
-                alwaysShowPercentage = false;
+                alwaysShowPercentage = true;
                 id = "Battery";
                 warningThreshold = 30;
               }
@@ -63,6 +64,15 @@
             enableDdcSupport = false;
             backlightDeviceMappings = [ ];
           };
+        };
+        templates = {
+          activeTemplates = [
+            "hyprland"
+            "alacritty"
+            "fuzzel"
+            "yazi"
+            "zed"
+          ];
         };
         colorSchemes = {
           useWallpaperColors = true;
