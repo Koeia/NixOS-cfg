@@ -83,11 +83,16 @@
     udiskie
     usbutils
     yazi
+    termius
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
+
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
 
   nix.settings.experimental-features = [
     "nix-command"
