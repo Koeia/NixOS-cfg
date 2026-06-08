@@ -35,6 +35,19 @@
   };
 
   services.udisks2.enable = true;
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      default = {
+        ids = [ "*" ];
+        settings = {
+          main = {
+            capslock = "esc";
+          };
+        };
+      };
+    };
+  };
   services.tailscale.enable = true;
   services.openssh.enable = true;
   programs.firefox.enable = true;
