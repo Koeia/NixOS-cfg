@@ -7,7 +7,7 @@
     nil
     nixd
     nodejs
-    "lua-language-server:wwith"
+    lua-language-server
     llvmPackages_latest.clang
   ];
 
