@@ -9,6 +9,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./lsps.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -59,7 +60,6 @@
 
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    gcc
     fuzzel
     kitty
     git-credential-manager
@@ -73,14 +73,8 @@
     curl
     alacritty
     waybar
-    neovim
     zed-editor
-    nil
-    nixd
-    lua-language-server
-    nodejs
     quickshell
-    clang
     kdePackages.dolphin
     brightnessctl
     udiskie
