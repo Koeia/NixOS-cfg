@@ -28,7 +28,10 @@
 
   users.users.jctannu4 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree

@@ -23,7 +23,6 @@
     x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaDark;
     name = "mochaDark";
-    size = 12;
   };
   programs.zsh = {
     enable = true;
