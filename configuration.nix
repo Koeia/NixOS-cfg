@@ -80,6 +80,7 @@
     lua-language-server
     nodejs
     quickshell
+    clang
     kdePackages.dolphin
     brightnessctl
     udiskie
