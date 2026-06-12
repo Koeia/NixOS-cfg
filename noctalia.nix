@@ -31,7 +31,7 @@
               {
                 hideUnoccupied = false;
                 id = "Workspace";
-                labelMode = "none";
+                labelMode = "index";
               }
             ];
             right = [
