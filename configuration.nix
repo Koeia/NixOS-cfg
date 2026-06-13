@@ -11,6 +11,7 @@
     ./services.nix
     ./hardware-configuration.nix
     ./lsps.nix
+    ./devtools.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
