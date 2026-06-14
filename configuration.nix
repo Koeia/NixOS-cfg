@@ -48,6 +48,7 @@
     kitty
     git-credential-manager
     libsecret
+    gnome-keyring
     package-version-server
     git
     vim
