@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  #test
-
   home.username = "jctannu4";
   home.homeDirectory = "/home/jctannu4";
   home.stateVersion = "26.05";
