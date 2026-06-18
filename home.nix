@@ -8,7 +8,7 @@
   programs.git = {
     enable = true;
     settings = {
-      credential.helper = "gnome-keyring";
+      credential.helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
       user = {
         name = "Koeia";
         email = "whereischason@protonmail.com";
