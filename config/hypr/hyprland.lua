@@ -8,7 +8,7 @@ hl.monitor({
 local terminal    = "alacritty"
 local browser     = "zen"
 local fileManager = "alacritty -e yazi"
-local menu        = "fuzzel"
+local menu        = "noctalia-shell ipc call launcher toggle"
 local editor      = "zeditor"
 local nsCalendar  = "noctalia-shell ipc call calendar toggle"
 local monitor     = "noctalia-shell ipc call systemMonitor toggle"
